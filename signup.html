@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do App</title>
+
+  <!-- ---------------- estilos compartilhados entre login e signup ---------------- -->
+  <link rel="stylesheet" href="styles/acesso.css">
+
+ 
+  
+
+</head>
+
+<body>
+
+  <div class="left">
+    <img src="./assets/pessoa-signup.png" alt="">
+  </div>
+  <div class="right">
+
+    
+    <form>
+      <div class="form-header"> 
+        <p>To-Do App</p>
+      </div>
+
+      
+    <div class="">
+        <label> Nome: </label>
+        <input id="inputName" type="text" minlength="4" maxlength="20" required>
+        <small class="error">Insira seu nome. </small>
+      </div>  
+      
+      <div>
+        <label> Sobrenome: </label>
+        <input id="inputSurname" type="text" minlength="6" maxlength="50"  required>
+        <small>Insira seu Sobrenome.</small>
+      </div>
+      
+      <div>
+        <label> Email: </label>
+        <input id="inputEmail" type="email" minlength="6" required>
+        <small>Insira um E-mail válido.</small>
+      </div>
+
+      <div>
+        <label> Senha: </label>
+        <input id="inputPassword" type="password" minlength="8" required>
+        <small>Insira uma senha com no minimo 8 caracteres.</small>
+      </div>
+      
+      <!-- aplicar a validaçao de mesma senha no campo abaixo -->
+      <div>
+        <label> Repetir senha: </label> 
+        <input id="inputPasswordRepeat" type="password" > 
+        <small>Senhas não conferem</small>
+      </div>
+      <!-- ------------------------------------------------- -->
+      
+
+      <button type="submit" id="buttonCreate" disabled>Criar conta</button>
+
+    </form>
+    <div class="ingressar">
+      <a href="index.html">Já possui conta? Acesse aqui</a>
+    </div>
+  </div>
+
+   <!-- ---------------------- lógica aplicada no registro -------------------- -->
+   <script src="./scripts/signup.js" type="module"></script>
+
+</body>
+
+</html>
